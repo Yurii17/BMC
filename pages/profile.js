@@ -34,8 +34,8 @@ module.exports = {
         I.wait(1);
         I.click(elements.submitButton.labelBoy);
         I.click(elements.submitButton.nextThird);
-        I.fillField(elements.fields.first_name,'AnnaberthaCeciliaDiana');
-        I.fillField(elements.fields.last_name,'HUmmera@****fillasumentina');
+        I.fillField(elements.fields.first_name, 'AnnaberthaCeciliaDiana');
+        I.fillField(elements.fields.last_name, 'HUmmera@****fillasumentina');
         I.click(elements.submitButton.next);
         I.wait(1);
         I.click(elements.submitButton.next);
@@ -44,7 +44,7 @@ module.exports = {
         I.wait(2);
         I.seeElement(elements.elementPage.congratulations);
         I.click(elements.submitButton.goChildProfile);
-        I.waitInUrl(elements.url.createChildUrl,10);
+        I.waitInUrl(elements.url.createChildUrl, 10);
     },
 
     sendAddPost() {
@@ -52,8 +52,8 @@ module.exports = {
         I.wait(2);
         I.click(elements.childButtons.addPost);
         I.wait(2);
-        I.fillField(elements.childFields.title,'Some text by text you see that!!!!!');
-        I.fillField(elements.childFields.description,'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.click(elements.childButtons.savePost);
         I.wait(3);
         I.click(elements.childButtons.deletePost);
@@ -68,29 +68,21 @@ module.exports = {
         I.wait(1);
         I.click(elements.submitButton.deleteChild);
         I.wait(1);
-        I.fillField(elements.fields.deleteChildPopup,'1234567890');
+        I.fillField(elements.fields.deleteChildPopup, '1234567890');
         I.click(elements.submitButton.deleteChildApprove);
-        I.waitInUrl(elements.url.profileURL,10);
+        I.waitInUrl(elements.url.profileURL, 10);
     },
 
     sendInviteYourFriends() {
         I.click(elements.submitButton.inviteYourFriends);
         I.waitInUrl(elements.url.inviteEmailURL, 10);
         I.click(elements.submitButton.inviteByPhone);
-        I.waitInUrl(elements.url.invitePhoneURL,10);
+        I.waitInUrl(elements.url.invitePhoneURL, 10);
+        I.fillField(elements.fields.invite_byPhone, '+39000000000000');
         I.click(elements.submitButton.inviteByEmail);
         I.fillField(elements.fields.invite_email, 'sometest@mail.com');
         I.click(elements.submitButton.inviteSubmit);
         I.wait(2);
-    },
-
-    sendSearchForPeople() {
-        I.click(elements.submitButton.searchForPeople);
-        I.waitInUrl(elements.url.searchForPeopleURL, 10);
-        // I.fillField(elements.fields.search_people, 'ron');
-        // I.click(elements.submitButton.inviteSubmit);
-        // I.grabTextFrom(elements.elementPage.search_user);
-        // I.seeElement(elements.submitButton.searchAdd);
     },
 
     sendVerifyMyProfile() {
@@ -121,7 +113,25 @@ module.exports = {
         I.wait(2);
     },
 
-
+    verifySearchPeople() {
+        I.click(elements.submitButton.searchForPeople);
+        I.waitInUrl(elements.url.searchForPeopleURL, 10);
+        I.fillField(elements.fields.search_people, 'Ann');
+        I.wait(2);
+        I.click(elements.submitButton.searchPeopleID);
+        I.waitInUrl(elements.url.searchResultIdURL, 10);
+        I.amOnPage(elements.url.searchForPeopleURL);
+        I.click(elements.submitButton.searchMemories);
+        I.fillField(elements.fields.search_memories, 'Some text');
+        I.wait(1);
+        I.click(elements.submitButton.searchAdvice);
+        I.waitInUrl(elements.url.searchAdviceURL, 10);
+        I.fillField(elements.fields.search_advice, 'Children');
+        I.wait(1);
+        I.click(elements.submitButton.searchAdviceID);
+        I.waitInUrl(elements.url.searchAdviceIdURL, 10);
+        I.amOnPage(elements.url.searchForPeopleURL);
+    },
 
 
 };

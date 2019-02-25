@@ -51,11 +51,6 @@ Scenario('Invite your friends and family', (I, loginPage, profilePage) => {
     profilePage.sendInviteYourFriends();
 });
 
-//--------------  Search for people ---------------------//
-Scenario('Search for people', (I, loginPage, profilePage) => {
-    loginPage.sendLoginForm();
-    profilePage.sendSearchForPeople();
-});
 
 //-----------------  Verify my profile -------------------------//
 Scenario('Verify my profile', (I, loginPage, profilePage) => {
@@ -76,9 +71,11 @@ Scenario('Verify footer header', (I, loginPage, profilePage) => {
     profilePage.verifyFooterHeader();
 });
 
-
-
-
+//----------------- Verify Search People -----------------//
+Scenario('Verify Search People', (I, loginPage, profilePage) => {
+    loginPage.sendLoginForm();
+    profilePage.verifySearchPeople();
+});
 
 
 
