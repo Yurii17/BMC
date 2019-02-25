@@ -28,7 +28,7 @@ module.exports = {
         I.click(elements.submitButton.next);
         I.wait(1);
         I.click(elements.submitButton.next);
-        I.attachFile(elements.file.attachFile, './photo/1.jpg');
+        I.attachFile(elements.file.attachFile, './1.jpg');
         I.wait(1);
         I.click(elements.submitButton.nextThird);
         I.wait(1);
