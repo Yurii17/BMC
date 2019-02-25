@@ -28,8 +28,8 @@ module.exports = {
         I.click(elements.submitButton.next);
         I.wait(1);
         I.click(elements.submitButton.next);
-        I.attachFile(elements.file.attachFile, './2.jpg');
-        I.wait(3);
+        I.attachFile(elements.file.attachFile, './photo/1.jpg');
+        I.wait(1);
         I.click(elements.submitButton.nextThird);
         I.wait(1);
         I.click(elements.submitButton.labelBoy);

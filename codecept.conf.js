@@ -19,7 +19,7 @@ exports.config = {
     loginPage: './pages/login.js',
     homePage: './pages/home.js',
     profilePage: './pages/profile.js',
-    helper: './_helper.js',
+    helper: './pages/_helper.js',
     elementsPage: './pages/elements.js',
   },
   multiple: {
