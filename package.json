@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "run": " codeceptjs run --steps --verbose --trace"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "rosie": "^2.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "dependencies": {
+    "codeceptjs-tempmail": "^0.4.7"
+  }
+}
