@@ -94,6 +94,3 @@ Scenario('Verify Sponsored', (I, loginPage, profilePage) => {
 
 
 
-
-
-

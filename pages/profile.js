@@ -48,18 +48,30 @@ module.exports = {
     },
 
     sendAddPost() {
+        I.wait(1);
         I.click(elements.childButtons.addAMemory);
-        I.wait(2);
+        I.wait(1);
         I.click(elements.childButtons.addPost);
         I.wait(2);
         I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.click(elements.childButtons.savePost);
+        I.fillField(elements.childFields.date, '3/26/2019');
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.click(elements.childButtons.postDatepicker);
+        I.wait(1);
+        I.click(elements.childButtons.postDatepickerYear);
+        I.wait(1);
+        I.click(elements.childButtons.postDatepickerMonth);
+        I.wait(1);
+        I.click(elements.childButtons.postDatepickerDay);
         I.wait(3);
-        I.click(elements.childButtons.deletePost);
-        I.wait(3);
-        I.click(elements.childButtons.deletePostProve);
+        I.click(elements.childButtons.savePost);
         I.wait(2);
+        // I.click(elements.childButtons.deletePost);
+        // I.wait(2);
+        // I.click(elements.childButtons.deletePostProve);
+        // I.wait(2);
     },
 
     sendDeleteYourChild() {
