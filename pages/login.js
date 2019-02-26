@@ -20,6 +20,7 @@ module.exports = {
 
     sendChangePassword() {
         I.click(elements.submitButton.single);
+        I.wait(1);
         I.click(elements.submitButton.changePassword);
         I.waitInUrl(elements.url.changePasswordURL,10);
         I.fillField(elements.fields.old_password, '123123123');

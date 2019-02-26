@@ -77,6 +77,12 @@ Scenario('Verify Search People', (I, loginPage, profilePage) => {
     profilePage.verifySearchPeople();
 });
 
+//----------------- Verify Sponsored ------------------//
+Scenario('Verify Sponsored', (I, loginPage, profilePage) => {
+    loginPage.sendLoginForm();
+    profilePage.verifySponsored();
+});
+
 
 
 

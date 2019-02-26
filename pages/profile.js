@@ -133,6 +133,14 @@ module.exports = {
         I.amOnPage(elements.url.searchForPeopleURL);
     },
 
+    verifySponsored() {
+        I.click(elements.submitButton.sponsoredProfessional);
+        I.waitInUrl(elements.url.sponsoredProfessionalURL,10);
+        I.seeElement(elements.elementPage.sponsoredProfessional);
+        I.click(elements.submitButton.sponsoredKnowYourChild);
+        I.waitInUrl(elements.url.sponsoredKnowYourChildURL,10);
+    },
+
 
 };
 
