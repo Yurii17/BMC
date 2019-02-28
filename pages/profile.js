@@ -205,8 +205,13 @@ module.exports = {
         I.seeElement(elements.submitButton.profile);
         I.scrollTo(elements.elementPage.footer);
         I.seeElement(elements.elementPage.blocMyChild);
-        I.seeElement(elements.submitButton.privacyPolicy);
-        I.seeElement(elements.submitButton.termsAndConditions);
+        I.wait(2);
+        // I.click(elements.submitButton.privacyPolicy);
+        I.amOnPage(elements.url.privacyPolicyURL);
+        I.waitInUrl(elements.url.privacyPolicyURL,10);
+        // I.click(elements.submitButton.termsAndConditions);
+        I.amOnPage(elements.url.termsAndConditionsURL);
+        I.waitInUrl(elements.url.termsAndConditionsURL,10);
         I.wait(2);
     },
 
