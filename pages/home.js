@@ -12,7 +12,7 @@ module.exports = {
     sendLogout() {
         I.click(elements.submitButton.single);
         I.click(elements.submitButton.logout);
-        // I.waitInUrl(elementPage.url.authLoginURL, 10);
+        // I.waitInUrl(elements.url.authLoginURL, 10);
     },
 
     verifyElementHomePage() {

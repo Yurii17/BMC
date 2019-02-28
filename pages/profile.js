@@ -202,15 +202,11 @@ module.exports = {
         I.waitInUrl(elements.url.editAccountURL, 10);
         I.click(elements.submitButton.searchForPeople);
         I.click(elements.submitButton.notifications);
-        // I.click(elements.submitButton.yourChildren);
         I.seeElement(elements.submitButton.profile);
-        I.seeElement(elements.submitButton.editAccount);
-        // I.click(elements.submitButton.menuItemDrop);
         I.scrollTo(elements.elementPage.footer);
         I.seeElement(elements.elementPage.blocMyChild);
         I.seeElement(elements.submitButton.privacyPolicy);
         I.seeElement(elements.submitButton.termsAndConditions);
-        // I.click(elements.submitButton.goUp);
         I.wait(2);
     },
 
