@@ -42,6 +42,10 @@ Scenario('Add/Post/Delete your child', (I, loginPage, profilePage) => {
     loginPage.sendLoginForm();
     profilePage.sendAddYourChild();
     profilePage.sendAddPost();
+    profilePage.sendAddFavorite();
+    profilePage.sendAddEvents();
+    profilePage.sendAddWishlist();
+    profilePage.addRecords();
     profilePage.sendDeleteYourChild();
 });
 
@@ -82,9 +86,6 @@ Scenario('Verify Sponsored', (I, loginPage, profilePage) => {
     loginPage.sendLoginForm();
     profilePage.verifySponsored();
 });
-
-
-
 
 
 

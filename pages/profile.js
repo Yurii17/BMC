@@ -55,9 +55,9 @@ module.exports = {
         I.wait(2);
         I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
-        I.click(elements.childButtons.savePost);
         I.fillField(elements.childFields.date, '3/26/2019');
         I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.wait(2);
         I.click(elements.childButtons.postDatepicker);
         I.wait(1);
         I.click(elements.childButtons.postDatepickerYear);
@@ -65,13 +65,80 @@ module.exports = {
         I.click(elements.childButtons.postDatepickerMonth);
         I.wait(1);
         I.click(elements.childButtons.postDatepickerDay);
-        I.wait(3);
+        I.wait(1);
         I.click(elements.childButtons.savePost);
         I.wait(2);
         // I.click(elements.childButtons.deletePost);
         // I.wait(2);
         // I.click(elements.childButtons.deletePostProve);
         // I.wait(2);
+    },
+
+    sendAddFavorite() {
+        I.wait(1);
+        I.click(elements.childButtons.addAMemory);
+        I.wait(1);
+        I.click(elements.childButtons.addFavorite);
+        I.wait(2);
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.wait(3);
+        // I.fillField(elements.childFields.date, '3/26/2019');
+        // I.click(elements.childButtons.postDatepicker);
+        // I.wait(5);
+        // I.click(elements.childButtons.postDatepickerYear);
+        // I.wait(1);
+        // I.click(elements.childButtons.postDatepickerMonth);
+        // I.wait(1);
+        // I.click(elements.childButtons.postDatepickerDay);
+        I.click(elements.childButtons.savePost);
+        I.wait(3);
+    },
+
+    sendAddEvents() {
+        I.waitForElement(elements.childButtons.addAMemory, 10);
+        I.click(elements.childButtons.addAMemory);
+        I.wait(1);
+        I.click(elements.childButtons.addEvents);
+        I.wait(2);
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
+        I.fillField(elements.childFields.enterLocation, 'Some text and special characters % $ @');
+        I.fillField(elements.childFields.address, 'California, Malibu');
+        I.click(elements.childButtons.savePost);
+        I.wait(3);
+    },
+
+    sendAddWishlist() {
+        I.waitForElement(elements.childButtons.addAMemory, 10);
+        I.click(elements.childButtons.addAMemory);
+        I.wait(1);
+        I.click(elements.childButtons.addWishlist);
+        I.wait(2);
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.wishlist, 'Happy Happy Happy Birthday !!!');
+        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
+        I.click(elements.childButtons.savePost);
+        I.wait(3);
+    },
+
+    addRecords() {
+        //----------- Record Academic ----------//
+        I.click(elements.submitButton.records);
+        I.waitInUrl(elements.url.recordsURL, 10);
+        I.click(elements.submitButton.addRecord);
+        I.wait(2);
+        I.fillField(elements.fields.recordTitle, 'Some text for test...');
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.wait(2);
+        I.click(elements.submitButton.selectRecord);
+        I.wait(1);
+        I.click(elements.submitButton.selectAcademic);
+        I.click(elements.submitButton.submitLogin);
+        I.wait(2);
     },
 
     sendDeleteYourChild() {
@@ -83,6 +150,7 @@ module.exports = {
         I.fillField(elements.fields.deleteChildPopup, '1234567890');
         I.click(elements.submitButton.deleteChildApprove);
         I.waitInUrl(elements.url.profileURL, 10);
+        I.wait(1);
     },
 
     sendInviteYourFriends() {
@@ -147,10 +215,10 @@ module.exports = {
 
     verifySponsored() {
         I.click(elements.submitButton.sponsoredProfessional);
-        I.waitInUrl(elements.url.sponsoredProfessionalURL,10);
+        I.waitInUrl(elements.url.sponsoredProfessionalURL, 10);
         I.seeElement(elements.elementPage.sponsoredProfessional);
         I.click(elements.submitButton.sponsoredKnowYourChild);
-        I.waitInUrl(elements.url.sponsoredKnowYourChildURL,10);
+        I.waitInUrl(elements.url.sponsoredKnowYourChildURL, 10);
     },
 
 

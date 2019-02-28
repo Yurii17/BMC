@@ -26,6 +26,7 @@ module.exports = {
         enterCode3       : 'input[id="mat-input-5"]',
         enterCode4       : 'input[id="mat-input-6"]',
         deleteChildPopup : 'input[name="password"]',
+        recordTitle      : 'input[name="title"]',
 
     },
 
@@ -87,8 +88,14 @@ module.exports = {
         deleteProfile         : {css: 'a[href="/user/profile/delete"]'},
         sponsoredProfessional : {css: 'a[href="/user/articles/professional"]'},
         sponsoredKnowYourChild: {css: 'a[href="/user/articles/know-your-child"]'},
+        records               : {css: 'a.count'},
+        addRecord             : {css: 'button.bmc-gradient.mat-flat-button'},
+        selectRecord          : {css: 'mat-select[placeholder="Select Record"]'},
+        selectAcademic        : {css: 'mat-option[aria-selected="false"]'},
+
 
     },
+
 
     url: {
         profileURL               : 'http://new.bmc.hibridmena.com/user/587',
@@ -113,6 +120,7 @@ module.exports = {
         deleteProfileURL         : 'http://new.bmc.hibridmena.com/user/profile/delete',
         sponsoredProfessionalURL : 'http://new.bmc.hibridmena.com/user/articles/professional',
         sponsoredKnowYourChildURL: 'http://new.bmc.hibridmena.com/user/articles/know-your-child',
+        recordsURL               : 'http://new.bmc.hibridmena.com/child/',
     },
 
     elementPage: {
@@ -129,28 +137,34 @@ module.exports = {
     },
 
     childButtons: {
-        childId        : {css: 'a[href="/child/1698"]'},
-        editChild      : {css: 'i[class="fa fa-cog editChild"]'},
-        editChildId    : {css: 'a[href="#!/children/500"]'},
-        deleteChildId  : {css: 'a[class="forPopoverMenu"]'},
-        article        : {css: 'a[class="nav-link"]'},
-        addAMemory     : {css: 'div.addFeedButton.ng-star-inserted'},
-        addPost        : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[1]/div',
-        savePost       : {css: 'button[type="submit"]'},
-        deletePost     : {css: 'div[class="open-tools ng-star-inserted"]'},
-        deletePostProve: {css: 'button[class=mat-menu-item]'},
-        postDatepicker : {css: '//*[@id="mat-datepicker-0"]/mat-calendar-header/div/div/button[1]'},
-        postDatepickerYear: {css: '//*[@id="mat-datepicker-0"]/div/mat-multi-year-view/table/tbody/tr[1]/td[4]/div'},
-        postDatepickerMonth: {css: '//*[@id="mat-datepicker-0"]/div/mat-year-view/table/tbody/tr[2]/td[2]/div'},
-        postDatepickerDay: {css: '//*[@id="mat-datepicker-0"]/div/mat-month-view/table/tbody/tr[5]/td[3]/div'},
+        childId            : {css: 'a[href="/child/1721"]'},
+        editChild          : {css: 'i[class="fa fa-cog editChild"]'},
+        editChildId        : {css: 'a[href="#!/children/500"]'},
+        deleteChildId      : {css: 'a[class="forPopoverMenu"]'},
+        article            : {css: 'a[class="nav-link"]'},
+        addAMemory         : {css: 'div.addFeedButton.ng-star-inserted'},
+        addPost            : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[1]/div',
+        addFavorite        : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[2]/div[2]',
+        addEvents          : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[3]/div[2]',
+        addWishlist        : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[3]/div[1]',
+        savePost           : {css: 'button[type="submit"]'},
+        deletePost         : {css: 'div[class="open-tools ng-star-inserted"]'},
+        deletePostProve    : {css: 'button[class=mat-menu-item]'},
+        postDatepicker     : {css: '//*[@id="mat-datepicker-0"]/mat-calendar-header/div/div/button[1]'},
+        postDatepickerYear : {css: '//*[@id="mat-datepicker-0"]/div/mat-multi-year-view/table/tbody/tr[1]/td[4]/div'},
+        postDatepickerMonth: {css: '//*[@id="mat-datepicker-0"]/div/mat-year-view/table/tbody/tr[2]/td[4]/div'},
+        postDatepickerDay  : {css: '//*[@id="mat-datepicker-0"]/div/mat-month-view/table/tbody/tr[6]/td[3]/div'},
 
 
     },
 
     childFields: {
-        title      : {css: 'input[name="title"]'},
-        description: {css: 'textarea[formcontrolname="description"]'},
-        date       : {css: 'input[formcontrolname="date"]'},
+        title        : {css: 'input[name="title"]'},
+        description  : {css: 'textarea[formcontrolname="description"]'},
+        date         : {css: 'input[formcontrolname="date"]'},
+        enterLocation: {css: 'input[name="location"]'},
+        address      : {css: 'input[name="address"]'},
+        wishlist     : {css: 'input[placeholder="Add Items to Wishlist"]'},
     },
 
     file: {
