@@ -45,7 +45,9 @@ Scenario('Add/Post/Delete your child', (I, loginPage, profilePage) => {
     profilePage.sendAddFavorite();
     profilePage.sendAddEvents();
     profilePage.sendAddWishlist();
-    profilePage.addRecords();
+    profilePage.sendAddFirstTimer();
+    profilePage.sendAddRecords();
+    profilePage.sendPrivacySettings();
     profilePage.sendDeleteYourChild();
 });
 

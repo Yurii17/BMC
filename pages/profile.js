@@ -117,16 +117,29 @@ module.exports = {
         I.wait(1);
         I.click(elements.childButtons.addWishlist);
         I.wait(2);
-        I.attachFile(elements.file.attachChildPost, './1.jpg');
         I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
         I.fillField(elements.childFields.wishlist, 'Happy Happy Happy Birthday !!!');
-        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.click(elements.childButtons.savePost);
         I.wait(3);
     },
 
-    addRecords() {
+    sendAddFirstTimer() {
+        I.waitForElement(elements.childButtons.addAMemory, 10);
+        I.click(elements.childButtons.addAMemory);
+        I.wait(1);
+        I.click(elements.childButtons.addFirstTimer);
+        I.wait(2);
+        I.attachFile(elements.file.attachChildPost, './1.jpg');
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
+        I.wait(2);
+        I.click(elements.childButtons.savePost);
+        I.wait(3);
+    },
+
+    sendAddRecords() {
         //----------- Record Academic ----------//
+        I.waitForElement(elements.childButtons.addAMemory, 10);
         I.click(elements.submitButton.records);
         I.waitInUrl(elements.url.recordsURL, 10);
         I.click(elements.submitButton.addRecord);
@@ -139,6 +152,14 @@ module.exports = {
         I.click(elements.submitButton.selectAcademic);
         I.click(elements.submitButton.submitLogin);
         I.wait(2);
+    },
+
+    sendPrivacySettings() {
+        I.waitForElement(elements.childButtons.privacySettings, 10);
+        I.click(elements.childButtons.privacySettings);
+        I.wait(2);
+        I.click(elements.submitButton.submitLogin);
+        I.wait(3);
     },
 
     sendDeleteYourChild() {

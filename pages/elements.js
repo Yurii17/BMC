@@ -133,7 +133,6 @@ module.exports = {
         down                  : {css: 'div[class="arrow-down"]'},
         congratulations       : {css: 'div[class="step congratulations ng-star-inserted"]'},
         sponsoredProfessional : {css: 'div[class="articles-page"]'},
-
     },
 
     childButtons: {
@@ -147,6 +146,7 @@ module.exports = {
         addFavorite        : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[2]/div[2]',
         addEvents          : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[3]/div[2]',
         addWishlist        : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[3]/div[1]',
+        addFirstTimer      : '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[2]/div[2]/div[2]/div[1]',
         savePost           : {css: 'button[type="submit"]'},
         deletePost         : {css: 'div[class="open-tools ng-star-inserted"]'},
         deletePostProve    : {css: 'button[class=mat-menu-item]'},
@@ -154,7 +154,7 @@ module.exports = {
         postDatepickerYear : {css: '//*[@id="mat-datepicker-0"]/div/mat-multi-year-view/table/tbody/tr[1]/td[4]/div'},
         postDatepickerMonth: {css: '//*[@id="mat-datepicker-0"]/div/mat-year-view/table/tbody/tr[2]/td[4]/div'},
         postDatepickerDay  : {css: '//*[@id="mat-datepicker-0"]/div/mat-month-view/table/tbody/tr[6]/td[3]/div'},
-
+        privacySettings    : {css: 'div.privacy-settings.ng-star-inserted'},
 
     },
 
