@@ -92,6 +92,12 @@ module.exports = {
         addRecord             : {css: 'button.bmc-gradient.mat-flat-button'},
         selectRecord          : {css: 'mat-select[placeholder="Select Record"]'},
         selectAcademic        : {css: 'mat-option[aria-selected="false"]'},
+        timelineDrop          : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-feeds/div[1]/h2/button'},
+        timelinePost          : {css: 'a[href="/user/587/posts"]'},
+        timelineFirstTimers   : {css: 'a[href="/user/587/first-timers"]'},
+        timelineFavorites     : {css: 'a[href="/user/587/favorites"]'},
+        timelineWishlist      : {css: 'a[href="/user/587/wishlists"]'},
+        timelineEvents        : {css: 'a[href="/user/587/events"]'},
 
 
     },
@@ -121,6 +127,11 @@ module.exports = {
         sponsoredProfessionalURL : 'http://new.bmc.hibridmena.com/user/articles/professional',
         sponsoredKnowYourChildURL: 'http://new.bmc.hibridmena.com/user/articles/know-your-child',
         recordsURL               : 'http://new.bmc.hibridmena.com/child/',
+        timelinePostURL          : 'http://new.bmc.hibridmena.com/user/587/posts',
+        timelineFirstTimersURL   : 'http://new.bmc.hibridmena.com/user/587/first-timers',
+        timelineFavoritesURL     : 'http://new.bmc.hibridmena.com/user/587/favorites',
+        timelineWishlistURL      : 'http://new.bmc.hibridmena.com/user/587/wishlists',
+        timelineEventsURL        : 'http://new.bmc.hibridmena.com/user/587/events',
     },
 
     elementPage: {

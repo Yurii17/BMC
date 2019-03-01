@@ -237,6 +237,28 @@ module.exports = {
         I.waitInUrl(elements.url.sponsoredKnowYourChildURL, 10);
     },
 
+    setTimeline: async () => {
+        // within(elements);
+        {
+            I.click(elements.submitButton.timelineDrop);
+            I.click(elements.submitButton.timelinePost);
+            I.waitInUrl(elements.url.timelinePostURL, 10);
+            I.click(elements.submitButton.timelineDrop);
+            I.click(elements.submitButton.timelineFirstTimers);
+            I.waitInUrl(elements.url.timelineFirstTimersURL, 10);
+            I.click(elements.submitButton.timelineDrop);
+            I.click(elements.submitButton.timelineFavorites);
+            I.waitInUrl(elements.url.timelineFavoritesURL, 10);
+            I.click(elements.submitButton.timelineDrop);
+            I.click(elements.submitButton.timelineWishlist);
+            I.waitInUrl(elements.url.timelineWishlistURL, 10);
+            I.click(elements.submitButton.timelineDrop);
+            I.click(elements.submitButton.timelineEvents);
+            I.waitInUrl(elements.url.timelineEventsURL, 10);
+        }
+    },
+
+
 };
 
 

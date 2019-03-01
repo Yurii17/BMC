@@ -90,7 +90,11 @@ Scenario('Verify Sponsored', (I, loginPage, profilePage) => {
     profilePage.verifySponsored();
 });
 
-
+//------------------ Verify Timeline -------------------//
+Scenario('Verify Timeline', (I, loginPage, profilePage) => {
+     loginPage.sendLoginForm();
+     profilePage.setTimeline();
+});
 
 
 
