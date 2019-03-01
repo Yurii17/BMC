@@ -26,7 +26,7 @@ module.exports = {
         I.fillField(elements.fields.first_name, 'Hubertbblaine');
         I.fillField(elements.fields.last_name, 'Wolfeschlegelsteinhausenbergerdorff');
         I.click(elements.submitButton.next);
-        I.wait(1);
+        // I.wait(1);
         I.click(elements.submitButton.next);
         I.attachFile(elements.file.attachFile, './1.jpg');
         I.wait(1);
@@ -37,11 +37,8 @@ module.exports = {
         I.fillField(elements.fields.first_name, 'AnnaberthaCeciliaDiana');
         I.fillField(elements.fields.last_name, 'HUmmera@****fillasumentina');
         I.click(elements.submitButton.next);
-        I.wait(1);
         I.click(elements.submitButton.next);
-        I.wait(1);
         I.click(elements.submitButton.next);
-        I.wait(2);
         I.seeElement(elements.elementPage.congratulations);
         I.click(elements.submitButton.goChildProfile);
         I.waitInUrl(elements.url.createChildUrl, 10);
@@ -59,19 +56,14 @@ module.exports = {
         I.attachFile(elements.file.attachChildPost, './1.jpg');
         I.wait(2);
         I.click(elements.childButtons.postDatepicker);
-        I.wait(1);
         I.click(elements.childButtons.postDatepickerYear);
-        I.wait(1);
         I.click(elements.childButtons.postDatepickerMonth);
-        I.wait(1);
         I.click(elements.childButtons.postDatepickerDay);
-        I.wait(1);
         I.click(elements.childButtons.savePost);
+        I.click(elements.childButtons.deletePost);
+        I.click(elements.childButtons.deletePostProve);
+        I.click(elements.childButtons.deletePostProve2);
         I.wait(2);
-        // I.click(elements.childButtons.deletePost);
-        // I.wait(2);
-        // I.click(elements.childButtons.deletePostProve);
-        // I.wait(2);
     },
 
     sendAddFavorite() {
@@ -84,14 +76,6 @@ module.exports = {
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.attachFile(elements.file.attachChildPost, './1.jpg');
         I.wait(3);
-        // I.fillField(elements.childFields.date, '3/26/2019');
-        // I.click(elements.childButtons.postDatepicker);
-        // I.wait(5);
-        // I.click(elements.childButtons.postDatepickerYear);
-        // I.wait(1);
-        // I.click(elements.childButtons.postDatepickerMonth);
-        // I.wait(1);
-        // I.click(elements.childButtons.postDatepickerDay);
         I.click(elements.childButtons.savePost);
         I.wait(3);
     },

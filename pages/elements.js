@@ -150,6 +150,7 @@ module.exports = {
         savePost           : {css: 'button[type="submit"]'},
         deletePost         : {css: 'div[class="open-tools ng-star-inserted"]'},
         deletePostProve    : {css: 'button[class=mat-menu-item]'},
+        deletePostProve2   : {css: '//app-delete-feed/div/button[2]'},
         postDatepicker     : {css: '//*[@id="mat-datepicker-0"]/mat-calendar-header/div/div/button[1]'},
         postDatepickerYear : {css: '//*[@id="mat-datepicker-0"]/div/mat-multi-year-view/table/tbody/tr[1]/td[4]/div'},
         postDatepickerMonth: {css: '//*[@id="mat-datepicker-0"]/div/mat-year-view/table/tbody/tr[2]/td[4]/div'},
