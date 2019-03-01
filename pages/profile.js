@@ -117,10 +117,20 @@ module.exports = {
         I.wait(1);
         I.click(elements.childButtons.addWishlist);
         I.wait(2);
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
         I.fillField(elements.childFields.wishlist, 'Happy Happy Happy Birthday !!!');
+        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.wishlist, 'Happy parents too !!!');
         I.click(elements.childButtons.savePost);
         I.wait(3);
+    },
+
+    sendWishlistItems() {
+        I.wait(1);
+        I.click(elements.childButtons.wishlistItems);
+        I.click(elements.childButtons.love);
+        I.click(elements.childButtons.smile);
+        I.click(elements.childButtons.favourites);
+        I.wait(2);
     },
 
     sendAddFirstTimer() {
@@ -208,10 +218,10 @@ module.exports = {
         I.wait(2);
         // I.click(elements.submitButton.privacyPolicy);
         I.amOnPage(elements.url.privacyPolicyURL);
-        I.waitInUrl(elements.url.privacyPolicyURL,10);
+        I.waitInUrl(elements.url.privacyPolicyURL, 10);
         // I.click(elements.submitButton.termsAndConditions);
         I.amOnPage(elements.url.termsAndConditionsURL);
-        I.waitInUrl(elements.url.termsAndConditionsURL,10);
+        I.waitInUrl(elements.url.termsAndConditionsURL, 10);
         I.wait(2);
     },
 
@@ -242,7 +252,6 @@ module.exports = {
         I.click(elements.submitButton.sponsoredKnowYourChild);
         I.waitInUrl(elements.url.sponsoredKnowYourChildURL, 10);
     },
-
 
 };
 

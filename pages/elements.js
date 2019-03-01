@@ -155,6 +155,10 @@ module.exports = {
         postDatepickerMonth: {css: '//*[@id="mat-datepicker-0"]/div/mat-year-view/table/tbody/tr[2]/td[4]/div'},
         postDatepickerDay  : {css: '//*[@id="mat-datepicker-0"]/div/mat-month-view/table/tbody/tr[6]/td[3]/div'},
         privacySettings    : {css: 'div.privacy-settings.ng-star-inserted'},
+        wishlistItems      : {css: 'mat-checkbox[class="mat-checkbox mat-accent"]'},
+        love               : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[1]'},
+        smile              : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[2]'},
+        favourites         : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[3]',}
 
     },
 
