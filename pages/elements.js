@@ -98,6 +98,7 @@ module.exports = {
         timelineFavorites     : {css: 'a[href="/user/587/favorites"]'},
         timelineWishlist      : {css: 'a[href="/user/587/wishlists"]'},
         timelineEvents        : {css: 'a[href="/user/587/events"]'},
+        connections           : {css: 'a[href="/user/587/connections"]'},
 
 
     },
@@ -144,6 +145,8 @@ module.exports = {
         down                  : {css: 'div[class="arrow-down"]'},
         congratulations       : {css: 'div[class="step congratulations ng-star-inserted"]'},
         sponsoredProfessional : {css: 'div[class="articles-page"]'},
+        connectionsTitle      : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/h2'},
+        connectionsName       : {css: 'a.name'},
     },
 
     childButtons: {

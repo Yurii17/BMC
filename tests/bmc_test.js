@@ -96,7 +96,11 @@ Scenario('Verify Timeline', (I, loginPage, profilePage) => {
     profilePage.setTimeline();
 });
 
-
+//------------------ Verify Connections -----------------//
+Scenario('Verify Connections', (I, loginPage, profilePage) => {
+    loginPage.sendLoginForm();
+    profilePage.verifyConnections();
+});
 
 
 

@@ -258,6 +258,16 @@ module.exports = {
         }
     },
 
+    verifyConnections: async function () {
+        let result = await I.grabTextFrom(elements.submitButton.connections);
+        I.click(elements.submitButton.connections);
+        let result2 = await I.grabTextFrom(elements.elementPage.connectionsTitle);
+        let result3 = await I.grabTextFrom(elements.elementPage.connectionsName);
+
+        console.log("result:", result, result2, result3);
+        // assert.notEqual(result,result2, true);
+    },
+
 
 };
 
