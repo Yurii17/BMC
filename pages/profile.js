@@ -264,9 +264,39 @@ module.exports = {
         let result2 = await I.grabTextFrom(elements.elementPage.connectionsTitle);
         let result3 = await I.grabTextFrom(elements.elementPage.connectionsName);
 
-        console.log("result:", result, result2, result3);
+        console.log('result:', result, result2, result3);
         // assert.notEqual(result,result2, true);
     },
+
+    verifySuggestedConnections: async function () {
+        I.wait(2);
+        I.click(elements.submitButton.suggestedConnect);
+        I.click(elements.submitButton.suggestedConnectFamily);
+        I.wait(2);
+        I.amOnPage(elements.url.suggestedConnectionsURL);
+        I.waitInUrl(elements.url.suggestedConnectionsURL,10);
+        I.scrollPageToBottom(elements.submitButton.loadMore);
+        I.click(elements.submitButton.loadMore);
+        I.wait(2);
+    },
+
+    deleteSuggestedConnections: async function () {
+        I.click(elements.submitButton.connections);
+        I.waitInUrl(elements.url.connectionsURL,10);
+        I.wait(2);
+        I.click(elements.submitButton.deleteConnections);
+        I.wait(1);
+        I.click(elements.submitButton.deleteChildApprove);
+        I.wait(2);
+    },
+
+
+
+
+
+
+
+
 
 
 };

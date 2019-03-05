@@ -102,14 +102,12 @@ Scenario('Verify Connections', (I, loginPage, profilePage) => {
     profilePage.verifyConnections();
 });
 
-
-
-
-
-
-
-
-
+//----------------- Suggested/Delete Connections ----------------//
+Scenario('Suggested/Delete Connections', (I, loginPage, profilePage) => {
+    loginPage.sendLoginForm();
+    profilePage.verifySuggestedConnections();
+    profilePage.deleteSuggestedConnections();
+});
 
 
 

@@ -99,7 +99,10 @@ module.exports = {
         timelineWishlist      : {css: 'a[href="/user/587/wishlists"]'},
         timelineEvents        : {css: 'a[href="/user/587/events"]'},
         connections           : {css: 'a[href="/user/587/connections"]'},
-
+        suggestedConnect      : {css: 'div.actions'},
+        suggestedConnectFamily: {css: 'button[class="mat-menu-item ng-star-inserted"][aria-disabled="false"]'},
+        loadMore              : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-suggested-connections/div/div/div[2]/div/button'},
+        deleteConnections     : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/ul/li[1]/div[3]'},
 
     },
 
@@ -133,20 +136,23 @@ module.exports = {
         timelineFavoritesURL     : 'http://new.bmc.hibridmena.com/user/587/favorites',
         timelineWishlistURL      : 'http://new.bmc.hibridmena.com/user/587/wishlists',
         timelineEventsURL        : 'http://new.bmc.hibridmena.com/user/587/events',
+        suggestedConnectionsURL  : 'http://new.bmc.hibridmena.com/user/suggested-connections',
+        connectionsURL           : 'http://new.bmc.hibridmena.com/user/587/connections',
     },
 
     elementPage: {
-        search_user           : {css: 'div[ng-if="s.model == \'user\'"]'},
-        footer                : {css: 'footer.footer'},
-        blocMyChild           : {css: 'div[class="col-auto copyrights"]'},
-        createYourAccountE    : {css: 'div[class="login-btn inline-block"]'},
-        homeText              : {css: 'h1'},
-        createYourAccountLogin: {css: 'div[class="col-sm-auto hide xs"]'},
-        down                  : {css: 'div[class="arrow-down"]'},
-        congratulations       : {css: 'div[class="step congratulations ng-star-inserted"]'},
-        sponsoredProfessional : {css: 'div[class="articles-page"]'},
-        connectionsTitle      : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/h2'},
-        connectionsName       : {css: 'a.name'},
+        search_user              : {css: 'div[ng-if="s.model == \'user\'"]'},
+        footer                   : {css: 'footer.footer'},
+        blocMyChild              : {css: 'div[class="col-auto copyrights"]'},
+        createYourAccountE       : {css: 'div[class="login-btn inline-block"]'},
+        homeText                 : {css: 'h1'},
+        createYourAccountLogin   : {css: 'div[class="col-sm-auto hide xs"]'},
+        down                     : {css: 'div[class="arrow-down"]'},
+        congratulations          : {css: 'div[class="step congratulations ng-star-inserted"]'},
+        sponsoredProfessional    : {css: 'div[class="articles-page"]'},
+        connectionsTitle         : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/h2'},
+        connectionsName          : {css: 'a.name'},
+
     },
 
     childButtons: {
