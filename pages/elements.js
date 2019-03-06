@@ -65,7 +65,7 @@ module.exports = {
         day                   : {css: 'input[firstName="date"]'},
         month                 : {css: 'input[placeholder="Month"]'},
         year                  : {css: 'input[placeholder="Year"]'},
-        single                : {css: '/html/body/app-root/div/app-header/header/div/div/div[2]/button[2]'},
+        single                : {css: '/html/body/app-root/div/app-header/header/div/div/div[2]/button[3]'},
         logo                  : {css: 'a[href="#"]'},
         registration          : {css: 'a[href="/auth/register"]'},
         joinUsNow             : {css: 'a[ui-sref="auth.registration"]'},
@@ -102,7 +102,7 @@ module.exports = {
         suggestedConnect      : {css: 'div.actions'},
         suggestedConnectFamily: {css: 'button[class="mat-menu-item ng-star-inserted"][aria-disabled="false"]'},
         loadMore              : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-suggested-connections/div/div/div[2]/div/button'},
-        deleteConnections     : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/ul/li[1]/div[3]'},
+        deleteConnections     : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/ul/li[3]/div[3]'},
 
     },
 

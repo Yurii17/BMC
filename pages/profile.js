@@ -12,7 +12,7 @@ module.exports = {
     setStartDate: async () => {
         within(elements.root);
         {
-            await elements.fillField(elements.root.startDate, elements.root.date);
+            await elements.I.fillField(elements.root.startDate, elements.root.date);
         }
     },
 
@@ -259,8 +259,10 @@ module.exports = {
     },
 
     verifyConnections: async function () {
+        I.waitForElement(elements.submitButton.connections,10);
         let result = await I.grabTextFrom(elements.submitButton.connections);
         I.click(elements.submitButton.connections);
+        I.waitForElement(elements.elementPage.connectionsTitle,10);
         let result2 = await I.grabTextFrom(elements.elementPage.connectionsTitle);
         let result3 = await I.grabTextFrom(elements.elementPage.connectionsName);
 
@@ -283,7 +285,6 @@ module.exports = {
     deleteSuggestedConnections: async function () {
         I.click(elements.submitButton.connections);
         I.waitInUrl(elements.url.connectionsURL,10);
-        I.wait(2);
         I.click(elements.submitButton.deleteConnections);
         I.wait(1);
         I.click(elements.submitButton.deleteChildApprove);
