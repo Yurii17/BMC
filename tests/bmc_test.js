@@ -42,6 +42,7 @@ Scenario('Add/Post/Delete your child', (I, loginPage, profilePage) => {
     loginPage.sendLoginForm();
     profilePage.sendAddYourChild();
     profilePage.sendAddPost();
+    profilePage.sendDeletePost();
     profilePage.sendAddFavorite();
     profilePage.sendAddEvents();
     profilePage.sendAddWishlist();
@@ -109,7 +110,16 @@ Scenario('Suggested/Delete Connections', (I, loginPage, profilePage) => {
     profilePage.deleteSuggestedConnections();
 });
 
-
+//---------------- Share a Memory ----------------//
+Scenario('Share a Memory', (I, loginPage, profilePage) => {
+    loginPage.sendLoginForm();
+    profilePage.verifyShareAMemory();
+    profilePage.sendAddPost();
+    profilePage.deleteShareAMemory();
+    profilePage.sendAddFavorite();
+    profilePage.sendAddWishlist();
+    profilePage.sendAddFirstTimer();
+});
 
 
 

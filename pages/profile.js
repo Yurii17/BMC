@@ -60,6 +60,10 @@ module.exports = {
         I.click(elements.childButtons.postDatepickerMonth);
         I.click(elements.childButtons.postDatepickerDay);
         I.click(elements.childButtons.savePost);
+        I.wait(2);
+    },
+
+    sendDeletePost() {
         I.click(elements.childButtons.deletePost);
         I.click(elements.childButtons.deletePostProve);
         I.click(elements.childButtons.deletePostProve2);
@@ -291,9 +295,16 @@ module.exports = {
         I.wait(2);
     },
 
+    verifyShareAMemory: async function () {
+        I.click(elements.childButtons.childFreya);
+        I.wait(1);
+    },
 
-
-
+    deleteShareAMemory: async function () {
+        I.click(elements.childButtons.deleteShare);
+        I.click(elements.submitButton.deleteChildApprove);
+        I.wait(2);
+    },
 
 
 

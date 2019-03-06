@@ -106,7 +106,6 @@ module.exports = {
 
     },
 
-
     url: {
         profileURL               : 'http://new.bmc.hibridmena.com/user/587',
         forgotPasswordURL        : 'http://new.bmc.hibridmena.com/auth/forgot',
@@ -141,17 +140,17 @@ module.exports = {
     },
 
     elementPage: {
-        search_user              : {css: 'div[ng-if="s.model == \'user\'"]'},
-        footer                   : {css: 'footer.footer'},
-        blocMyChild              : {css: 'div[class="col-auto copyrights"]'},
-        createYourAccountE       : {css: 'div[class="login-btn inline-block"]'},
-        homeText                 : {css: 'h1'},
-        createYourAccountLogin   : {css: 'div[class="col-sm-auto hide xs"]'},
-        down                     : {css: 'div[class="arrow-down"]'},
-        congratulations          : {css: 'div[class="step congratulations ng-star-inserted"]'},
-        sponsoredProfessional    : {css: 'div[class="articles-page"]'},
-        connectionsTitle         : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/h2'},
-        connectionsName          : {css: 'a.name'},
+        search_user           : {css: 'div[ng-if="s.model == \'user\'"]'},
+        footer                : {css: 'footer.footer'},
+        blocMyChild           : {css: 'div[class="col-auto copyrights"]'},
+        createYourAccountE    : {css: 'div[class="login-btn inline-block"]'},
+        homeText              : {css: 'h1'},
+        createYourAccountLogin: {css: 'div[class="col-sm-auto hide xs"]'},
+        down                  : {css: 'div[class="arrow-down"]'},
+        congratulations       : {css: 'div[class="step congratulations ng-star-inserted"]'},
+        sponsoredProfessional : {css: 'div[class="articles-page"]'},
+        connectionsTitle      : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/h2'},
+        connectionsName       : {css: 'a.name'},
 
     },
 
@@ -179,8 +178,9 @@ module.exports = {
         wishlistItems      : {css: 'mat-checkbox[class="mat-checkbox mat-accent"]'},
         love               : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[1]'},
         smile              : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[2]'},
-        favourites         : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[3]',}
-
+        favourites         : {css: '/html/body/app-root/div/div/app-child/div/div/div[2]/div/app-feeds/div[1]/div/div[1]/app-feed/div/div[4]/div[3]'},
+        childFreya         : {css: 'a[href="/child/1110"]'},
+        deleteShare        : {css: 'button.fluid.mat-flat-button.mat-warn'},
     },
 
     childFields: {
