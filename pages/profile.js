@@ -50,7 +50,7 @@ module.exports = {
         I.wait(1);
         I.click(elements.childButtons.addPost);
         I.wait(2);
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.title, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.date, '3/26/2019');
         I.attachFile(elements.file.attachChildPost, './1.jpg');
@@ -76,7 +76,7 @@ module.exports = {
         I.wait(1);
         I.click(elements.childButtons.addFavorite);
         I.wait(2);
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.title, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.attachFile(elements.file.attachChildPost, './1.jpg');
         I.wait(3);
@@ -91,7 +91,7 @@ module.exports = {
         I.click(elements.childButtons.addEvents);
         I.wait(2);
         I.attachFile(elements.file.attachChildPost, './1.jpg');
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.title, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.enterLocation, 'Some text and special characters % $ @');
         I.fillField(elements.childFields.address, 'California, Malibu');
@@ -106,7 +106,7 @@ module.exports = {
         I.click(elements.childButtons.addWishlist);
         I.wait(2);
         I.fillField(elements.childFields.wishlist, 'Happy Happy Happy Birthday !!!');
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.title, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.wishlist, 'Happy parents too !!!');
         I.click(elements.childButtons.savePost);
         I.wait(3);
@@ -128,7 +128,7 @@ module.exports = {
         I.click(elements.childButtons.addFirstTimer);
         I.wait(2);
         I.attachFile(elements.file.attachChildPost, './1.jpg');
-        I.fillField(elements.childFields.title, 'Some text by text you see that!!!!!');
+        I.fillField(elements.childFields.title, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.fillField(elements.childFields.description, 'Lorem ipsum dolor sit amet, consectetur adipiscing eli');
         I.wait(2);
         I.click(elements.childButtons.savePost);
@@ -142,7 +142,7 @@ module.exports = {
         I.waitInUrl(elements.url.recordsURL, 10);
         I.click(elements.submitButton.addRecord);
         I.wait(2);
-        I.fillField(elements.fields.recordTitle, 'Some text for test...');
+        I.fillField(elements.fields.recordTitle, 'Lorem ipsum dolor sit amet, adipiscing eli...');
         I.attachFile(elements.file.attachChildPost, './1.jpg');
         I.wait(2);
         I.click(elements.submitButton.selectRecord);
@@ -270,7 +270,7 @@ module.exports = {
         let result2 = await I.grabTextFrom(elements.elementPage.connectionsTitle);
         let result3 = await I.grabTextFrom(elements.elementPage.connectionsName);
 
-        console.log('result:', result, result2, result3);
+        console.log('result:', result, result2);
         // assert.notEqual(result,result2, true);
     },
 

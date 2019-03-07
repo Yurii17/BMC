@@ -115,10 +115,13 @@ Scenario('Share a Memory', (I, loginPage, profilePage) => {
     loginPage.sendLoginForm();
     profilePage.verifyShareAMemory();
     profilePage.sendAddPost();
-    profilePage.deleteShareAMemory();
     profilePage.sendAddFavorite();
     profilePage.sendAddWishlist();
     profilePage.sendAddFirstTimer();
+    profilePage.deleteShareAMemory();
+    profilePage.deleteShareAMemory();
+    profilePage.deleteShareAMemory();
+    profilePage.deleteShareAMemory();
 });
 
 
