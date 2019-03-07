@@ -289,6 +289,7 @@ module.exports = {
     deleteSuggestedConnections: async function () {
         I.click(elements.submitButton.connections);
         I.waitInUrl(elements.url.connectionsURL,10);
+        I.waitForElement(elements.submitButton.deleteConnections);
         I.click(elements.submitButton.deleteConnections);
         I.wait(1);
         I.click(elements.submitButton.deleteChildApprove);
