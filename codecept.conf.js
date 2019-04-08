@@ -6,11 +6,11 @@ exports.config = {
             url        : 'http://new.bmc.hibridmena.com',
             driver     : 'local',
             browser    : 'chrome',
-            // desiredCapabilities: {
-            //     chromeOptions: {
-            //         args: ["--headless", "--disable-gpu", "--window-size=1920,1080"]
-            //     }
-            // },
+            desiredCapabilities: {
+                chromeOptions: {
+                    args: ["--headless", "--disable-gpu", "--window-size=1920,1080"]
+                }
+            },
             restart    : false,
             windowSize : '1920 x 1080',
             smartWait  : 5000,
