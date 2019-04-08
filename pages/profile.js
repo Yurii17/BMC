@@ -27,6 +27,15 @@ module.exports = {
         I.fillField(elements.fields.last_name, 'Wolfeschlegelsteinhausenbergerdorff');
         I.click(elements.submitButton.next);
         // I.wait(1);
+        I.wait(2);
+        I.click(elements.submitButton.openYear );
+        I.click(elements.submitButton.selectOption);
+        I.wait(1);
+        I.click(elements.submitButton.openMonth);
+        I.click(elements.submitButton.selectOption);
+        I.click(elements.submitButton.openDay);
+        I.click(elements.submitButton.selectOption);
+
         I.click(elements.submitButton.next);
         I.attachFile(elements.file.attachFile, './1.jpg');
         I.wait(1);
@@ -113,8 +122,9 @@ module.exports = {
     },
 
     sendWishlistItems() {
-        I.wait(1);
+        I.waitForElement(elements.childButtons.addAMemory, 10);
         I.click(elements.childButtons.wishlistItems);
+        I.wait(1);
         I.click(elements.childButtons.love);
         I.click(elements.childButtons.smile);
         I.click(elements.childButtons.favourites);

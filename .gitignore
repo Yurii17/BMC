@@ -1,0 +1,6 @@
+vendor\
+.idea
+.idea\*
+*.jpg
+tests\_output\*
+vendor/*

@@ -103,6 +103,12 @@ module.exports = {
         suggestedConnectFamily: {css: 'button[class="mat-menu-item ng-star-inserted"][aria-disabled="false"]'},
         loadMore              : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-suggested-connections/div/div/div[2]/div/button'},
         deleteConnections     : {css: '/html/body/app-root/div/div/app-user/div/div/div[2]/div/app-connections/div/ul/li[3]/div[3]'},
+        openDay               : {css: 'app-date-inputs .mat-form-field:nth-child(3)'},
+        selectOption          : {css: '.cdk-overlay-pane mat-option:nth-child(2)'},
+        openMonth             : {css: 'app-date-inputs .mat-form-field:nth-child(2)'},
+        selectMonth           : {css: 'app-date-inputs .mat-form-field:nth-child(2)'},
+        openYear              : {css: 'app-date-inputs .mat-form-field:nth-child(1)'},
+        selectYear            : {css: 'app-date-inputs .mat-form-field:nth-child(3)'},
     },
 
     url: {

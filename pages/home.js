@@ -46,6 +46,14 @@ module.exports = {
         I.wait(2);
         I.click(elements.submitButton.nextSecond);
         I.wait(2);
+        I.click(elements.submitButton.openYear );
+        I.click(elements.submitButton.selectOption);
+        I.wait(1);
+        I.click(elements.submitButton.openMonth);
+        I.click(elements.submitButton.selectOption);
+        I.click(elements.submitButton.openDay);
+        I.click(elements.submitButton.selectOption);
+
         I.click(elements.submitButton.nextSecond);
         I.fillField(elements.fields.email, 'some@gmail.com');
         I.click(elements.submitButton.nextSecond);
@@ -55,7 +63,6 @@ module.exports = {
         I.fillField(elements.fields.enterCode3, '3');
         I.fillField(elements.fields.enterCode4, '4');
         I.click(elements.submitButton.nextSecond);
-
     },
 
 
